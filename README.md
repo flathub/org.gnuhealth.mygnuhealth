@@ -1,27 +1,83 @@
-# Flathub
+# MyGNUHealth Flatpak
 
-Flathub is the central place for building and hosting Flatpak builds.
+This is the [MyGNUHealth](https://docs.gnuhealth.org/mygnuhealth/) Flatpak.
 
-Using the Flathub repository
-----------------------------
 
-To install applications that are hosted on Flathub, use the following:
+# Users
+
+This section covers installation instructions and additional information for MyGNUHealth users.
+
+### Install
+
+Add the Flathub remote.
+
+    flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+Install the MyGNUHealth Flatpak.
+
+    flatpak --user install -y flathub org.gnuhealth.mygnuhealth
+
+### Known issues
+
+#### Fonts and user elements are too big or too small.
+
+This is an upstream scaling issue.
+Read the `Manual control of metrics` section in the [Kivy documentation](https://kivy.org/doc/stable/_modules/kivy/metrics.html)
+and try to find the right `KIVY_DPI`, `KIVY_METRICS_DENSITY` (and optinally the `KIVY_METRICS_FONTSCALE`) value for your screen.
+For example:
+
+```bash
+flatpak run --devel --command=bash org.gnuhealth.mygnuhealth
+`KIVY_DPI=320 KIVY_METRICS_DENSITY=2.0 mygnuhealth --size 720x1440`
 ```
-flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gnome.Recipes
+
+Once you have the right values you can set them permanenty on this package:
+
+```bash
+flatpak override --env="KIVY_DPI=320 KIVY_METRICS_DENSITY=2.0" org.gnuhealth.mygnuhealth
 ```
 
-To install applications from the beta branch, use the following:
-```
-flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-flatpak install flathub-beta org.godotengine.Godot
-```
+## Maintainers
 
-For more information and more applications see https://flathub.org
+### Build
 
-Contributing to Flathub
------------------------
+Get the build dependencies.
 
-For information on creating packages or reporting issues please see the [contributing page](/CONTRIBUTING.md).
+    flatpak --user install -y flathub org.freedesktop.Platform//23.08 org.freedesktop.Sdk//23.08 org.freedesktop.Sdk.Extension.rust-stable//23.08
 
-***Note:*** *this repository is not for reporting issues related to the flathub.org website itself or contributing to its development. For that, go to https://github.com/flathub-infra/website*
+Get the source code.
+
+    git clone https://github.com/flathub/org.gnuhealth.mygnuhealth
+    cd org.gnuhealth.mygnuhealth
+
+Add the Flathub repository.
+
+    flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+Install Flatpak Builder.
+
+    sudo apt install flatpak-builder
+
+Build the Flatpak.
+
+    flatpak-builder --user --install --install-deps-from=flathub --force-clean --repo=repo build-dir org.gnuhealth.mygnuhealth.yaml
+
+Run the Flatpak.
+
+    flatpak run org.gnuhealth.MyGNUHealth
+
+### Update
+
+##### bcrypt
+
+First, clone the bcrypt library, checking out the particular version to built as part of the Flatpak.
+
+    git clone https://github.com/pyca/bcrypt.git
+    git -C bcrypt pull
+    git -C bcrypt checkout <insert commit here>
+
+Generate the Rust sources list using the `flatpak-cargo-generator` for the cryptography library's Rust crate.
+
+    python3 flatpak-builder-tools/cargo/flatpak-cargo-generator.py bcrypt/src/_bcrypt/Cargo.lock --format yaml -o bcrypt-cargo-sources.yaml
+
+This generates a `bcrypt-cargo-sources.yaml` file which needs to be copied into the Flatpak manifest.
