@@ -366,3 +366,6 @@ modules:
       - type: archive
         url: https://files.pythonhosted.org/packages/63/de/483697e9e2d61352ce88f147f629564119dbf3e5a235582f8fb1a4a38185/mygnuhealth-2.0.1.tar.gz
         sha256: 5126e2ed9af885dd5b1a8f47497d709433b20c48456af0b76643352f0c45f237
+        x-checker-data:
+          type: pypi
+          name: mygnuhealth
