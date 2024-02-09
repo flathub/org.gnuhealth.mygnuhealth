@@ -333,6 +333,11 @@ modules:
       - type: archive
         url: https://gitlab.freedesktop.org/xorg/lib/libxmu/-/archive/libXmu-1.1.2/libxmu-libXmu-1.1.2.tar.gz
         sha256: c74dd369191d125e2b278e669301b7f1a0d67e2f6c92c7dad24e08a5e2cfcb45
+        x-checker-data:
+          type: anitya
+          project-id: 1785
+          stable-only: true
+          url-template: https://gitlab.freedesktop.org/xorg/lib/libxmu/-/archive/libXmu-$version/libxmu-libXmu-$version.tar.gz
 
   - name: xclip
     buildsystem: autotools
@@ -340,6 +345,11 @@ modules:
       - type: archive
         url: https://github.com/astrand/xclip/archive/0.13.tar.gz
         sha256: ca5b8804e3c910a66423a882d79bf3c9450b875ac8528791fb60ec9de667f758
+        x-checker-data:
+          type: anitya
+          project-id: 14150
+          stable-only: true
+          url-template: https://github.com/astrand/xclip/archive/$version.tar.gz
 
   - name: mtdev
     buildsystem: autotools
@@ -347,6 +357,11 @@ modules:
       - type: archive
         url: http://bitmath.org/code/mtdev/mtdev-1.1.6.tar.gz
         sha256: 1325f389a2f25cd5f5a8ea4d29aad24aa7c3ec30401d679400dd79eb9c0a8dbb
+        x-checker-data:
+          type: anitya
+          project-id: 8868
+          stable-only: true
+          url-template: http://bitmath.org/code/mtdev/mtdev-$version.tar.gz
       - type: shell
         commands:
           - cp -p /usr/share/automake-*/config.{sub,guess} config-aux
