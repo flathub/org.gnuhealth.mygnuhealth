@@ -379,8 +379,8 @@ modules:
         --prefix=${FLATPAK_DEST} "." --no-build-isolation
     sources:
       - type: archive
-        url: https://files.pythonhosted.org/packages/63/de/483697e9e2d61352ce88f147f629564119dbf3e5a235582f8fb1a4a38185/mygnuhealth-2.0.1.tar.gz
-        sha256: 5126e2ed9af885dd5b1a8f47497d709433b20c48456af0b76643352f0c45f237
+        url: https://files.pythonhosted.org/packages/06/95/42b63a506993d74cc0dca6a472aaed5d75280b7189d58083f09f0671c508/mygnuhealth-2.0.2.tar.gz
+        sha256: dbc269940eae84936c4f5e82315cac8b6c265b8149fdb8ccc507cf0c34c38af3
         x-checker-data:
           type: pypi
           name: mygnuhealth
