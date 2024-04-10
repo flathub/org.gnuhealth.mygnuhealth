@@ -201,8 +201,8 @@ modules:
           name: charset-normalizer
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/60/17/f0571f9129facd32b3036b83dc14835e073fa75b70676feaf5383cd5ee6c/docutils-0.21-py3-none-any.whl
-        sha256: c26e17ca4915b9df42a4ce2ccca1b25b8b896f33caedb1a558684f0789d0783e
+        url: https://files.pythonhosted.org/packages/ea/6a/1c934b70bc12be40be886060709317c2ad5a5fe2180469410bd9344f5235/docutils-0.21.1-py3-none-any.whl
+        sha256: 14c8d34a55b46c88f9f714adb29cefbdd69fb82f3fef825e59c5faab935390d8
         x-checker-data:
           name: docutils
           packagetype: bdist_wheel
