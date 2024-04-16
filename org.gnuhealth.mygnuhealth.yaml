@@ -331,8 +331,8 @@ modules:
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://gitlab.freedesktop.org/xorg/lib/libxmu/-/archive/libXmu-1.2.0/libxmu-libXmu-1.2.0.tar.gz
-        sha256: 5750b5dbf1f3355ddcfe9c70cb1023a64b16ce9c4210196ccaff66b24d402de9
+        url: https://gitlab.freedesktop.org/xorg/lib/libxmu/-/archive/libXmu-1.2.1/libxmu-libXmu-1.2.1.tar.gz
+        sha256: 420979c1fd4438a9f41e0086f10c8d2a00125643f6d4ff7ed67282878ae39531
         x-checker-data:
           type: anitya
           project-id: 1785
