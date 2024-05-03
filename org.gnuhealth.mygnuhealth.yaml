@@ -244,8 +244,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/17/be/a5d2c16317c6a890502725970589ae7f06cfc66b2e6916ba0a86973403c8/cairocffi-1.6.1-py3-none-any.whl
-        sha256: aa78ee52b9069d7475eeac457389b6275aa92111895d78fbaa2202a52dac112e
+        url: https://files.pythonhosted.org/packages/4c/0d/c9b8a12971276b33143422ff6b73aa7d74cff5f7effbffbe2a1df3bd6590/cairocffi-1.7.0-py3-none-any.whl
+        sha256: 1f29a8d41dbda4090c0aa33bcdea64f3b493e95f74a43ea107c4a8a7b7f632ef
         x-checker-data:
           name: cairocffi
           packagetype: bdist_wheel
