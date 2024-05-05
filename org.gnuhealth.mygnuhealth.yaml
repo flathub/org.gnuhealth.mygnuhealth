@@ -58,8 +58,8 @@ modules:
         --prefix=${FLATPAK_DEST} "bcrypt" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/72/07/6a6f2047a9dc9d012b7b977e4041d37d078b76b44b7ee4daf331c1e6fb35/bcrypt-4.1.2.tar.gz
-        sha256: 33313a1200a3ae90b75587ceac502b048b840fc69e7f7a0905b5f87fac7a1258
+        url: https://files.pythonhosted.org/packages/ca/e9/0b36987abbcd8c9210c7b86673d88ff0a481b4610630710fb80ba5661356/bcrypt-4.1.3.tar.gz
+        sha256: 2ee15dd749f5952fe3f0430d0ff6b74082e159c50332a1413d51b5689cf06623
         x-checker-data:
           type: pypi
           name: bcrypt
