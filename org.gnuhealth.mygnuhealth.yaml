@@ -118,8 +118,8 @@ modules:
         --prefix=${FLATPAK_DEST} "pygal" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/a8/c4/b5f03ec36e2d8ad067bbc36697bc78f8c25564f3481ade2d8c8f0a140854/importlib_metadata-7.2.0-py3-none-any.whl
-        sha256: 04e4aad329b8b948a5711d394fa8759cb80f009225441b4f2a02bd4d8e5f426c
+        url: https://files.pythonhosted.org/packages/9e/28/7daa5f782f5e2cbbec00556bf23ca106023470ebab3ae1040ee778269af1/importlib_metadata-7.2.1-py3-none-any.whl
+        sha256: ffef94b0b66046dd8ea2d619b701fe978d9264d38f3998bc4c27ec3b146a87c8
         x-checker-data:
           name: importlib_metadata
           packagetype: bdist_wheel
@@ -385,8 +385,8 @@ modules:
         --prefix=${FLATPAK_DEST} "." --no-build-isolation
     sources:
       - type: archive
-        url: https://files.pythonhosted.org/packages/d4/63/83f0b5fdc0176f487874d67f7a8f1e470d74de49662e6cdde64bda426246/mygnuhealth-2.0.3.tar.gz
-        sha256: 3b84b70d8720033a3c68e4d3a15ab9991ab7fd9bce776a64205ca191b837fe50
+        url: https://files.pythonhosted.org/packages/e9/c1/a610c8b60c78013f4f0fe70b4d9d2fd21dc81d28e3b720005f2a0d0e5db8/mygnuhealth-2.2.0.tar.gz
+        sha256: d72d6dc8cc4b526e132a28540f6f30665f5622f09d5a819d1de4526e3b7bc61f
         x-checker-data:
           type: pypi
           name: mygnuhealth
