@@ -65,19 +65,3 @@ Build the Flatpak.
 Run the Flatpak.
 
     flatpak run org.gnuhealth.MyGNUHealth
-
-### Update
-
-##### bcrypt
-
-First, clone the bcrypt library, checking out the particular version to built as part of the Flatpak.
-
-    git clone https://github.com/pyca/bcrypt.git
-    git -C bcrypt pull
-    git -C bcrypt checkout <insert commit here>
-
-Generate the Rust sources list using the `flatpak-cargo-generator` for the cryptography library's Rust crate.
-
-    python3 flatpak-builder-tools/cargo/flatpak-cargo-generator.py bcrypt/src/_bcrypt/Cargo.lock -o bcrypt-cargo-sources.json
-
-This generates a `bcrypt-cargo-sources.yaml` file which needs to be copied into the Flatpak manifest.
