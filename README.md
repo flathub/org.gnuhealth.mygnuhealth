@@ -43,7 +43,7 @@ flatpak override --env="KIVY_DPI=320 KIVY_METRICS_DENSITY=2.0" org.gnuhealth.myg
 
 Get the build dependencies.
 
-    flatpak --user install -y flathub org.freedesktop.Platform//23.08 org.freedesktop.Sdk//23.08 org.freedesktop.Sdk.Extension.rust-stable//23.08
+    flatpak --user install -y flathub org.freedesktop.Platform//23.08 org.freedesktop.Sdk//23.08
 
 Get the source code.
 
