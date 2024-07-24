@@ -127,8 +127,8 @@ modules:
         --prefix=${FLATPAK_DEST} "pygal" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/c7/f3/6bd738acf4e03b2cd8360521cf5edd398866acc1b4bc95fa9fced218e52b/importlib_metadata-8.1.0-py3-none-any.whl
-        sha256: 3cd29f739ed65973840b068e3132135ce954c254d48b5b640484467ef7ab3c8c
+        url: https://files.pythonhosted.org/packages/82/47/bb25ec04985d0693da478797c3d8c1092b140f3a53ccb984fbbd38affa5b/importlib_metadata-8.2.0-py3-none-any.whl
+        sha256: 11901fa0c2f97919b288679932bb64febaeacf289d18ac84dd68cb2e74213369
         x-checker-data:
           name: importlib_metadata
           packagetype: bdist_wheel
