@@ -134,8 +134,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/29/83/94e10cdc24489caef1ffcf9c3c2836fc35eff0f1c1d60d609d55d449820c/pygal-3.0.4-py2.py3-none-any.whl
-        sha256: e931caf08b4be0e6ec119a4c0e20dbed2d77829c641b7dea0ed21fe6ec81f2ea
+        url: https://files.pythonhosted.org/packages/22/7d/b5d656dbeb73f488ce7409a75108a775f6cf8e20624ed8025a9476cbc1bb/pygal-3.0.5-py3-none-any.whl
+        sha256: a3268a5667b470c8fbbb0eca7e987561a7321caeba589d40e4c1bc16dbe71393
         x-checker-data:
           name: pygal
           packagetype: bdist_wheel
