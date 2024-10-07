@@ -156,8 +156,8 @@ modules:
         --prefix=${FLATPAK_DEST} "tinydb" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/1c/c4/9a1721139a6087ab3df4ba99ac82da5d88f92b1ea5027b0c411ce09b1d70/tinydb-4.8.0-py3-none-any.whl
-        sha256: 30c06d12383d7c332e404ca6a6103fb2b32cbf25712689648c39d9a6bd34bd3d
+        url: https://files.pythonhosted.org/packages/76/30/0a1dad15b57432f10a583bc4ebe3cf5d05c9d7ebf323642ddd07a639b601/tinydb-4.8.1-py3-none-any.whl
+        sha256: 1c7c507ef520c789f94f1f5786f0722a98a59a85031a2e81e2accc701721f07f
         x-checker-data:
           name: tinydb
           packagetype: bdist_wheel
