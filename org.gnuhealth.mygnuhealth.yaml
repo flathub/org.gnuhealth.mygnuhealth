@@ -76,7 +76,7 @@ modules:
           type: pypi
 
   # 'requests' is a direct dependency of mygnuhealth
-  # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//23.08 --yaml --checker-data pip requests
+  # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//24.08 --yaml --checker-data pip requests
   - name: python3-requests
     buildsystem: simple
     build-commands:
@@ -119,7 +119,7 @@ modules:
           type: pypi
 
   # 'pygal' is a direct dependency of mygnuhealth
-  # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//23.08 --yaml --checker-data pip pygal
+  # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//24.08 --yaml --checker-data pip pygal
   - name: python3-pygal
     buildsystem: simple
     build-commands:
@@ -163,7 +163,7 @@ modules:
           packagetype: bdist_wheel
           type: pypi
   # 'kivy' is a direct dependency of mygnuhealth and 'packaging' is a dependency of 'kivy'
-  # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//23.08 --yaml --checker-data pip packaging kivy
+  # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//24.08 --yaml --checker-data pip packaging kivy
   - name: python3-packaging
     buildsystem: simple
     build-commands:
@@ -207,13 +207,20 @@ modules:
         url: https://files.pythonhosted.org/packages/16/b0/572805e227f01586461c80e0fd25d65a2115599cc9dad142fee4b747c357/charset_normalizer-3.4.1.tar.gz
         sha256: 44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3
         x-checker-data:
-          name: charset-normalizer
+          name: charset_normalizer
           type: pypi
       - type: file
         url: https://files.pythonhosted.org/packages/8f/d7/9322c609343d929e75e7e5e6255e614fcc67572cfd083959cdef3b7aad79/docutils-0.21.2-py3-none-any.whl
         sha256: dafca5b9e384f0e419294eb4d2ff9fa826435bf15f15b7bd45723e8ad76811b2
         x-checker-data:
           name: docutils
+          packagetype: bdist_wheel
+          type: pypi
+      - type: file
+        url: https://files.pythonhosted.org/packages/18/79/1b8fa1bb3568781e84c9200f951c735f3f157429f44be0495da55894d620/filetype-1.2.0-py2.py3-none-any.whl
+        sha256: 7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25
+        x-checker-data:
+          name: filetype
           packagetype: bdist_wheel
           type: pypi
       - type: file
@@ -260,7 +267,7 @@ modules:
           packagetype: bdist_wheel
           type: pypi
     # 'bleak' is a direct dependency of mygnuhealth
-    # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//23.08 --yaml --checker-data pip python-dateutil
+    # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//24.08 --yaml --checker-data pip python-dateutil
   - name: python3-bleak
     buildsystem: simple
     build-commands:
@@ -278,8 +285,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://files.pythonhosted.org/packages/6a/7a/aa1260a30d7766eed7ab9b57b1f7391eb5c72ec3e11bede0984cc31925ff/dbus_fast-2.22.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: 6497859da721041dbf7615aab1cae666e5c0a169fca80032ab2fd8b03f7730f5
+        url: https://files.pythonhosted.org/packages/ee/c6/31847f4473105269585d33d6c92289719c7f6bda9b1e1c005368ab7eab54/dbus_fast-2.24.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: 3a1d215d9a62964a0df56ddb27f09f315903e5756920832fccb5b7990894ceb8
         x-checker-data:
           name: dbus-fast
           packagetype: bdist_wheel
@@ -288,8 +295,8 @@ modules:
       - type: file
         only-arches:
           - aarch64
-        url: https://files.pythonhosted.org/packages/fd/d1/7a64954d4956ea2d99d15c89371720c96f7336c8ba899f1e50121a80ce9b/dbus_fast-2.22.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 38e213b0252f97d6a9ceb97cd2d84ddac0d998b8dd15bdca051def181a666b6a
+        url: https://files.pythonhosted.org/packages/6e/c1/71731047bdc6cb835a08cdcf3188b0ebfb21953133002c9ceb64db662020/dbus_fast-2.24.4-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: 7f02b734948b9d70c943e694a0fca5ab323a516dc2d453365c70fbe4d5e0a731
         x-checker-data:
           name: dbus-fast
           packagetype: bdist_wheel
