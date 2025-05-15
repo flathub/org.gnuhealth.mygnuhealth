@@ -317,8 +317,8 @@ modules:
         --prefix=${FLATPAK_DEST} "cairosvg" "olefile" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/18/ed/e04ffd1043a47b4510fd8a1e0c4e1c6b5b27922ef53a578739ed3cfd1f32/cairosvg-2.8.0-py3-none-any.whl
-        sha256: f15836feea67a680f79938edf2efdd162793526b0b1cc2fd9ec257ebeafe2946
+        url: https://files.pythonhosted.org/packages/67/48/816bd4aaae93dbf9e408c58598bc32f4a8c65f4b86ab560864cb3ee60adb/cairosvg-2.8.2-py3-none-any.whl
+        sha256: eab46dad4674f33267a671dce39b64be245911c901c70d65d2b7b0821e852bf5
         x-checker-data:
           name: CairoSVG
           packagetype: bdist_wheel
