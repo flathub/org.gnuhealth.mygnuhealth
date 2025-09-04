@@ -1,0 +1,51 @@
+--- Kivy-2.3.1/kivy/graphics/context_instructions.pyx
++++ Kivy-2.3.1/kivy/graphics/context_instructions.pyx
+@@ -86,7 +86,7 @@
+ 
+ cdef tuple hsv_to_rgb(float h, float s, float v):
+     if s == 0.0: return v, v, v
+-    cdef long i = long(h * 6.0)
++    cdef int i = int(h * 6.0)
+     cdef float f = (h * <float>6.0) - i
+     cdef float p = v * (<float>1.0 - s)
+     cdef float q = v * (<float>1.0 - s * f)
+--- Kivy-2.3.1/kivy/graphics/opengl.pyx
++++ Kivy-2.3.1/kivy/graphics/opengl.pyx
+@@ -689,7 +689,7 @@
+     cdef void *ptr = NULL
+     if isinstance(indices, bytes):
+         ptr = <void *>(<char *>(<bytes>indices))
+-    elif isinstance(indices, (long, int)):
++    elif isinstance(indices, (int, int)):
+         ptr = <void *>(<unsigned int>indices)
+     else:
+         raise TypeError("Argument 'indices' has incorrect type (expected bytes or int).")
+@@ -1163,7 +1163,7 @@
+     assert type == GL_UNSIGNED_BYTE
+ 
+     cdef object py_pixels = None
+-    cdef long size
++    cdef int size
+     cdef char *data
+ 
+     size = width * height * sizeof(GLubyte)
+@@ -1539,7 +1539,7 @@
+     cdef void *ptr = NULL
+     if isinstance(data, bytes):
+         ptr = <void *>(<char *>(<bytes>data))
+-    elif isinstance(data, (long, int)):
++    elif isinstance(data, (int, int)):
+         ptr = <void *>(<unsigned int>data)
+     else:
+         raise TypeError("Argument 'data' has incorrect type (expected bytes or int).")
+--- Kivy-2.3.1/kivy/weakproxy.pyx
++++ Kivy-2.3.1/kivy/weakproxy.pyx
+@@ -254,7 +254,7 @@
+         return int(self.__ref__())
+ 
+     def __long__(self):
+-        return long(self.__ref__())
++        return int(self.__ref__())
+ 
+     def __float__(self):
+         return float(self.__ref__())

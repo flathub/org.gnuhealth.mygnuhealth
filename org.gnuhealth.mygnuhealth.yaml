@@ -180,6 +180,12 @@ modules:
   - name: python3-kivy
     buildsystem: simple
     build-commands:
+      # Since cython can't be downgraded from the freedesktop SDK, we need to apply a fix on Kivy,
+      # that works post Cython 3.1.0 (see https://github.com/cython/cython/issues/6857)
+      - tar -xzvf Kivy-2.3.1.tar.gz && rm Kivy-2.3.1.tar.gz
+      - patch -p0 < fix-build-for-cython-3.1.0.patch
+      - tar -czvf Kivy-2.3.1.tar.gz Kivy-2.3.1
+      - rm -rf Kivy-2.3.1
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
         --prefix=${FLATPAK_DEST} "kivy" --no-build-isolation
     sources:
@@ -189,6 +195,8 @@ modules:
         x-checker-data:
           name: Kivy
           type: pypi
+      - type: file
+        path: ./fix-build-for-cython-3.1.0.patch
       - type: file
         url: https://files.pythonhosted.org/packages/6a/55/cd1555bde62f809219cbc5d8a0836b0293399da2f4ba4e8ee84b6a7cc393/Kivy_Garden-0.1.5-py3-none-any.whl
         sha256: ef50f44b96358cf10ac5665f27a4751bb34ef54051c54b93af891f80afe42929
