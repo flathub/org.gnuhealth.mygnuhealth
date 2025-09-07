@@ -1,0 +1,28 @@
+{
+    "name": "libxmp",
+    "buildsystem": "cmake-ninja",
+    "builddir": true,
+    "config-opts": [
+        "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+        "-DBUILD_STATIC=OFF"
+    ],
+    "sources": [
+        {
+            "url": "https://github.com/libxmp/libxmp/releases/download/libxmp-4.6.3/libxmp-4.6.3.tar.gz",
+            "sha256": "b189a2ff3f3eef0008512e0fb27c2cdc27480bc1066b82590a84d02548fab96d",
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 1784,
+                "stable-only": true,
+                "url-template": "https://github.com/libxmp/libxmp/releases/download/libxmp-$version/libxmp-$version.tar.gz"
+            },
+            "type": "archive"
+        }
+    ],
+    "cleanup": [
+        "/lib/pkgconfig",
+        "/lib/libxmp.so",
+        "/lib/cmake",
+        "/include"
+    ]
+}

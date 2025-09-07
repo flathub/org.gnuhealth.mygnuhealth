@@ -1,0 +1,25 @@
+{
+    "name": "SDL2_ttf",
+    "buildsystem": "cmake-ninja",
+    "builddir": true,
+    "config-opts": [
+        "-DCMAKE_VERBOSE_MAKEFILE=ON",
+        "-DCMAKE_BUILD_TYPE:STRING=Release",
+        "-DCMAKE_INSTALL_LIBDIR:PATH=lib"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/libsdl-org/SDL_mixer/releases/download/release-2.8.1/SDL2_mixer-2.8.1.tar.gz",
+            "sha256": "cb760211b056bfe44f4a1e180cc7cb201137e4d1572f2002cc1be728efd22660"
+        }
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/*.la",
+        "/lib/*.a",
+        "/lib/cmake",
+        "/share/aclocal",
+        "/lib/pkgconfig"
+    ]
+}

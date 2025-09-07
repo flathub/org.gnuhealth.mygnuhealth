@@ -1,0 +1,17 @@
+{
+    "name": "fluidsynth",
+    "buildsystem": "cmake-ninja",
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.8.tar.gz",
+            "sha256": "d6d04e9014557906ee42aa1fe3cd580840ea482d4c3b1a45fddd45ec606d6e97",
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 10437,
+                "stable-only": true,
+                "url-template": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v$version.tar.gz"
+            }
+        }
+    ]
+}
