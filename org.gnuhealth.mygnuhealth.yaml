@@ -1,6 +1,6 @@
 id: org.gnuhealth.mygnuhealth
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: mygnuhealth
 
@@ -177,6 +177,13 @@ modules:
           name: packaging
           packagetype: bdist_wheel
           type: pypi
+  # 'kivy' is a direct dependency of mygnuhealth and 'SDL' is a dependency of 'kivy'
+  - ./SDL/libxmp.json
+  - ./SDL/FluidSynth.json
+  - ./SDL/SDL2.json
+  - ./SDL/SDL2_image.json
+  - ./SDL/SDL2_ttf.json
+  - ./SDL/SDL2_mixer.json
   - name: python3-kivy
     buildsystem: simple
     build-commands:
@@ -252,6 +259,13 @@ modules:
           name: urllib3
           packagetype: bdist_wheel
           type: pypi
+      - type: file
+        url: https://files.pythonhosted.org/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86bdc/pygments-2.19.2-py3-none-any.whl
+        sha256: 86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b
+        x-checker-data:
+          name: Pygments
+          packagetype: bdist_wheel
+          type: pypi
     # 'python-dateutil' is a direct dependency of mygnuhealth
     # Generated with flatpak-pip-generator --runtime org.freedesktop.Sdk//23.08 --yaml --checker-data pip python-dateutil
   - name: python3-python-dateutil
@@ -293,8 +307,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://files.pythonhosted.org/packages/ee/c6/31847f4473105269585d33d6c92289719c7f6bda9b1e1c005368ab7eab54/dbus_fast-2.24.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: 3a1d215d9a62964a0df56ddb27f09f315903e5756920832fccb5b7990894ceb8
+        url: https://files.pythonhosted.org/packages/78/c8/b45ff0a015f606c1998df2070967f016f873d4087845af14fd3d01303b0b/dbus_fast-2.44.3-cp313-cp313-manylinux_2_36_x86_64.whl
+        sha256: 6e0a6a27a1f53b32259d0789bca6f53decd88dec52722cac9a93327f8b7670c3
         x-checker-data:
           name: dbus-fast
           packagetype: bdist_wheel
@@ -303,8 +317,8 @@ modules:
       - type: file
         only-arches:
           - aarch64
-        url: https://files.pythonhosted.org/packages/6e/c1/71731047bdc6cb835a08cdcf3188b0ebfb21953133002c9ceb64db662020/dbus_fast-2.24.4-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 7f02b734948b9d70c943e694a0fca5ab323a516dc2d453365c70fbe4d5e0a731
+        url: https://files.pythonhosted.org/packages/ca/cf/e4ae27e14e470b84827848694836e8fae0c386162d98e43f891783c0abc8/dbus_fast-2.44.3-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: da0910f813350b951efe4964a19d7f4aaf253b6c1021b0d68340160a990dc2fc
         x-checker-data:
           name: dbus-fast
           packagetype: bdist_wheel
