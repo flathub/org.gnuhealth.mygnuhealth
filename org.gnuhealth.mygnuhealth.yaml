@@ -19,36 +19,10 @@ cleanup:
   - /share/doc   # libXmu docs
 
 modules:
-  # This is a dependency of bcrypt
-  - name: python3-setuptools_rust
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "setuptools_rust" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/7d/31/f2289ce78b9b473d582568c234e104d2a342fd658cc288a7553d83bb8595/semantic_version-2.10.0.tar.gz
-        sha256: bdabb6d336998cbb378d4b9db3a4b56a1e3235701dc05ea2690d9a997ed5041c
-        x-checker-data:
-          type: pypi
-          name: semantic_version
-      - type: file
-        url: https://files.pythonhosted.org/packages/e0/92/bf8589b1a2b6107cf9ec8daa9954c0b7620643fe1f37d31d75e572d995f5/setuptools_rust-1.11.1.tar.gz
-        sha256: 7dabc4392252ced314b8050d63276e05fdc5d32398fc7d3cce1f6a6ac35b76c0
-        x-checker-data:
-          type: pypi
-          name: setuptools-rust
-
   # 'bcrypt' is a direct dependency of mygnuhealth
   # The bcrypt Python library is handled specially since it has Rust code and dependencies.
   # The cryptography Python library is handled specially since it has Rust code and dependencies.
   - name: python3-bcrypt
-    build-options:
-      append-path: /usr/lib/sdk/rust-stable/bin
-      env:
-        CARGO_HOME: /run/build/python3-bcrypt/cargo
-        CARGO_NET_OFFLINE: 'true'
-        RUST_BACKTRACE: '1'
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
