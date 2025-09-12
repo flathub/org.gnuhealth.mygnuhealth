@@ -16,7 +16,10 @@
                 "type": "anitya",
                 "project-id": 4784,
                 "stable-only": true,
-                "url-template": "https://github.com/libsdl-org/SDL_ttf/releases/download/release-${version0}.${version1}.${version2}/SDL3_ttf-${version0}.${version1}.${version2}.tar.gz"
+                "url-template": "https://github.com/libsdl-org/SDL_ttf/releases/download/release-${version0}.${version1}.${version2}/SDL2_ttf-${version0}.${version1}.${version2}.tar.gz",
+                "versions": {
+                    "<": "3.0"
+                }
             }
         }
     ],
