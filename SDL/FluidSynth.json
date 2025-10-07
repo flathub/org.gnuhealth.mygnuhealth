@@ -10,7 +10,10 @@
                 "type": "anitya",
                 "project-id": 10437,
                 "stable-only": true,
-                "url-template": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v$version.tar.gz"
+                "url-template": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v$version.tar.gz",
+                "versions": {
+                    "<": "2.5"
+                }
             }
         }
     ]
