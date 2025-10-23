@@ -352,11 +352,25 @@ modules:
         x-checker-data:
           name: olefile
           type: pypi
+      # x86_64 specific
       - type: file
-        url: https://files.pythonhosted.org/packages/f3/0d/d0d6dea55cd152ce3d6767bb38a8fc10e33796ba4ba210cbab9354b6d238/pillow-11.3.0.tar.gz
-        sha256: 3828ee7586cd0b2091b6209e5ad53e20d0649bbe87164a459d0676e035e8f523
+        only-arches:
+          - x86_64
+        url: https://files.pythonhosted.org/packages/38/57/755dbd06530a27a5ed74f8cb0a7a44a21722ebf318edbe67ddbd7fb28f88/pillow-12.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+        sha256: f4f1231b7dec408e8670264ce63e9c71409d9583dd21d32c163e25213ee2a344
         x-checker-data:
           name: pillow
+          packagetype: bdist_wheel
+          type: pypi
+      # aarch64 specific
+      - type: file
+        only-arches:
+          - aarch64
+        url: https://files.pythonhosted.org/packages/20/39/c685d05c06deecfd4e2d1950e9a908aa2ca8bc4e6c3b12d93b9cafbd7837/pillow-12.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
+        sha256: 0b817e7035ea7f6b942c13aa03bb554fc44fea70838ea21f8eb31c638326584e
+        x-checker-data:
+          name: pillow
+          packagetype: bdist_wheel
           type: pypi
       - type: file
         url: https://files.pythonhosted.org/packages/a0/e3/59cd50310fc9b59512193629e1984c1f95e5c8ae6e5d8c69532ccc65a7fe/pycparser-2.23-py3-none-any.whl
