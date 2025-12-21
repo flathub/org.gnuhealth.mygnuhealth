@@ -101,8 +101,8 @@ modules:
         --prefix=${FLATPAK_DEST} "pygal" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/20/b0/36bd937216ec521246249be3bf9855081de4c5e06a0c9b4219dbeda50373/importlib_metadata-8.7.0-py3-none-any.whl
-        sha256: e5dd1551894c77868a30651cef00984d50e1002d06942a7101d34870c5f02afd
+        url: https://files.pythonhosted.org/packages/fa/5e/f8e9a1d23b9c20a551a8a02ea3637b4642e22c2626e3a13a9a29cdea99eb/importlib_metadata-8.7.1-py3-none-any.whl
+        sha256: 5a1f80bf1daa489495071efbb095d75a634cf28a8bc299581244063b53176151
         x-checker-data:
           name: importlib_metadata
           packagetype: bdist_wheel
@@ -199,8 +199,8 @@ modules:
           name: charset_normalizer
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/11/a8/c6a4b901d17399c77cd81fb001ce8961e9f5e04d3daf27e8925cb012e163/docutils-0.22.3-py3-none-any.whl
-        sha256: bd772e4aca73aff037958d44f2be5229ded4c09927fcf8690c577b66234d6ceb
+        url: https://files.pythonhosted.org/packages/02/10/5da547df7a391dcde17f59520a231527b8571e6f46fc8efb02ccb370ab12/docutils-0.22.4-py3-none-any.whl
+        sha256: d0013f540772d1420576855455d050a2180186c91c15779301ac2ccb3eeb68de
         x-checker-data:
           name: docutils
           packagetype: bdist_wheel
