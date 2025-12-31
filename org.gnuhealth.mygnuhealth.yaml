@@ -298,8 +298,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/6a/e1/3fbf0f1b4481da68172ccf7287962e9e0de506f0c1d5cf5b891f43af0990/bleak-2.1.0-py3-none-any.whl
-        sha256: d31cb6da13d77ac3c7759ec9e96baa652ea6ae8bd264d2159c9ba273bc4540ae
+        url: https://files.pythonhosted.org/packages/99/fe/22aec895f040c1e457d6e6fcc79286fbb17d54602600ab2a58837bec7be1/bleak-2.1.1-py3-none-any.whl
+        sha256: 61ac1925073b580c896a92a8c404088c5e5ec9dc3c5bd6fc17554a15779d83de
         x-checker-data:
           name: bleak
           packagetype: bdist_wheel
