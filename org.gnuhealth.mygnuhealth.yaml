@@ -416,8 +416,8 @@ modules:
         --prefix=${FLATPAK_DEST} "cssselect" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/ee/58/257350f7db99b4ae12b614a36256d9cc870d71d9e451e79c2dc3b23d7c3c/cssselect-1.3.0-py3-none-any.whl
-        sha256: 56d1bf3e198080cc1667e137bc51de9cadfca259f03c2d4e09037b3e01e30f0d
+        url: https://files.pythonhosted.org/packages/20/0c/7bb51e3acfafd16c48875bf3db03607674df16f5b6ef8d056586af7e2b8b/cssselect-1.4.0-py3-none-any.whl
+        sha256: c0ec5c0191c8ee39fcc8afc1540331d8b55b0183478c50e9c8a79d44dbceb1d8
         x-checker-data:
           name: cssselect
           packagetype: bdist_wheel
@@ -427,8 +427,8 @@ modules:
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://gitlab.freedesktop.org/xorg/lib/libxmu/-/archive/libXmu-1.3.0/libxmu-libXmu-1.3.0.tar.gz
-        sha256: 59225b0b5f8b258d027e8da061e9458f49374fa03e256e9c208573fe1ee4bbc1
+        url: https://gitlab.freedesktop.org/xorg/lib/libxmu/-/archive/libXmu-1.3.1/libxmu-libXmu-1.3.1.tar.gz
+        sha256: a38bff41f609e2ea887c05fb4a31e926a03ba1d69ddda9423682e198839f2355
         x-checker-data:
           type: anitya
           project-id: 1785
