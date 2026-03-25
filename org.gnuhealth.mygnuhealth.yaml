@@ -78,8 +78,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl
-        sha256: 2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6
+        url: https://files.pythonhosted.org/packages/56/5d/c814546c2333ceea4ba42262d8c4d55763003e767fa169adc693bd524478/requests-2.33.0-py3-none-any.whl
+        sha256: 3324635456fa185245e24865e810cecec7b4caf933d7eb133dcde67d48cee69b
         x-checker-data:
           name: requests
           packagetype: bdist_wheel
@@ -220,8 +220,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl
-        sha256: 2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6
+        url: https://files.pythonhosted.org/packages/56/5d/c814546c2333ceea4ba42262d8c4d55763003e767fa169adc693bd524478/requests-2.33.0-py3-none-any.whl
+        sha256: 3324635456fa185245e24865e810cecec7b4caf933d7eb133dcde67d48cee69b
         x-checker-data:
           name: requests
           packagetype: bdist_wheel
@@ -298,8 +298,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/2b/d4/c047f565c483e21710269998b5eacbe5cd21805996758818f2388ce11028/bleak-3.0.0-py3-none-any.whl
-        sha256: adca43fd4efe36994b6662114e0ae464298d11d694e96747c78cf079397a4048
+        url: https://files.pythonhosted.org/packages/d2/9c/839e4ff0393070396c656fa6616d0d2512f60b571c1263183e709db1c365/bleak-3.0.1-py3-none-any.whl
+        sha256: 49f93f24ce96610529842da2d9856e7f46597e25966c0f1cfc737f0191566de6
         x-checker-data:
           name: bleak
           packagetype: bdist_wheel
