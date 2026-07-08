@@ -65,8 +65,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/20/56/10a88e00039537d74bd420f0457c52ab8f58a1af56126e3b9f1b1c8c4724/charset_normalizer-3.4.8.tar.gz
-        sha256: d9bf144d6faf12c70d58e47f7512992ae2882b820031d6cef68152deb645bf2d
+        url: https://files.pythonhosted.org/packages/bd/2a/23f34ec9d04624958e137efdc394888716353190e75f25dd22c7a2c7a8aa/charset_normalizer-3.4.9.tar.gz
+        sha256: 673611bbd43f0810bec0b0f028ddeaaa501190339cac411f347ac76917c3ae7b
         x-checker-data:
           name: charset-normalizer
           type: pypi
@@ -193,8 +193,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/20/56/10a88e00039537d74bd420f0457c52ab8f58a1af56126e3b9f1b1c8c4724/charset_normalizer-3.4.8.tar.gz
-        sha256: d9bf144d6faf12c70d58e47f7512992ae2882b820031d6cef68152deb645bf2d
+        url: https://files.pythonhosted.org/packages/bd/2a/23f34ec9d04624958e137efdc394888716353190e75f25dd22c7a2c7a8aa/charset_normalizer-3.4.9.tar.gz
+        sha256: 673611bbd43f0810bec0b0f028ddeaaa501190339cac411f347ac76917c3ae7b
         x-checker-data:
           name: charset_normalizer
           type: pypi
@@ -327,8 +327,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/eb/56/b1ba7935a17738ae8453301356628e8147c79dbb825bcbc73dc7401f9846/cffi-2.0.0.tar.gz
-        sha256: 44d1b5909021139fe36001ae048dbdde8214afa20200eda0f64c068cac5d5529
+        url: https://files.pythonhosted.org/packages/57/5f/ff100cae70ebe9d8df1c01a00e510e45d9adb5c1fdda84791b199141de97/cffi-2.1.0.tar.gz
+        sha256: efc1cdd798b1aaf39b4610bba7aad28c9bea9b910f25c784ccf9ec1fa719d1f9
         x-checker-data:
           name: cffi
           type: pypi
