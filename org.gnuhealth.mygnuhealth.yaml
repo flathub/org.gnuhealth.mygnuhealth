@@ -333,8 +333,8 @@ modules:
           name: cffi
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/21/0e/8459ca4413e1a21a06c97d134bfaf18adfd27cea068813dc0faae06cbf00/cssselect2-0.9.0-py3-none-any.whl
-        sha256: 6a99e5f91f9a016a304dd929b0966ca464bcfda15177b6fb4a118fc0fb5d9563
+        url: https://files.pythonhosted.org/packages/33/86/541fbb5c2dc931ca9dd7ea010b073ead7d66d04f2009e41c72f4094fefd1/cssselect2-0.10.0-py3-none-any.whl
+        sha256: f80848dab8ae74bd359b819dc85db349770d6a2861b6db737ca527c248269ec3
         x-checker-data:
           name: cssselect2
           packagetype: bdist_wheel
