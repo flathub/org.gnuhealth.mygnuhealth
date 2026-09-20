@@ -1,0 +1,152 @@
+diff -ur Kivy-2.3.1/examples/demo/multistroke/historymanager.py Kivy-2.3.1-extra-patch/examples/demo/multistroke/historymanager.py
+--- Kivy-2.3.1/examples/demo/multistroke/historymanager.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/examples/demo/multistroke/historymanager.py	2026-09-24 14:57:40.043210533 +0200
+@@ -196,7 +196,7 @@
+             scrollv.scroll_y = 1
+             return
+ 
+-        if PY2:
++        if 0:
+             d = r.iteritems
+         else:
+             d = r.items
+diff -ur Kivy-2.3.1/examples/demo/shadereditor/main.py Kivy-2.3.1-extra-patch/examples/demo/shadereditor/main.py
+--- Kivy-2.3.1/examples/demo/shadereditor/main.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/examples/demo/shadereditor/main.py	2026-09-24 14:57:40.043136805 +0200
+@@ -122,7 +122,7 @@
+             return
+ 
+         # we don't use str() here because it will crash with non-ascii char
+-        if PY2:
++        if 0:
+             fs = fs_header + self.fs.encode('utf-8')
+             vs = vs_header + self.vs.encode('utf-8')
+         else:
+diff -ur Kivy-2.3.1/kivy/config.py Kivy-2.3.1-extra-patch/kivy/config.py
+--- Kivy-2.3.1/kivy/config.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/config.py	2026-09-24 14:57:40.042818265 +0200
+@@ -539,7 +539,7 @@
+ 
+     def get(self, section, option, **kwargs):
+         value = PythonConfigParser.get(self, section, option, **kwargs)
+-        if PY2:
++        if 0:
+             if type(value) is str:
+                 return value.decode('utf-8')
+         return value
+diff -ur Kivy-2.3.1/kivy/core/audio/audio_gstplayer.py Kivy-2.3.1-extra-patch/kivy/core/audio/audio_gstplayer.py
+--- Kivy-2.3.1/kivy/core/audio/audio_gstplayer.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/core/audio/audio_gstplayer.py	2026-09-24 14:57:40.042743933 +0200
+@@ -16,7 +16,7 @@
+ from kivy.clock import Clock
+ from os.path import realpath
+ 
+-if PY2:
++if 0:
+     from urllib import pathname2url
+ else:
+     from urllib.request import pathname2url
+diff -ur Kivy-2.3.1/kivy/core/spelling/spelling_enchant.py Kivy-2.3.1-extra-patch/kivy/core/spelling/spelling_enchant.py
+--- Kivy-2.3.1/kivy/core/spelling/spelling_enchant.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/core/spelling/spelling_enchant.py	2026-09-24 14:57:40.042671311 +0200
+@@ -45,6 +45,6 @@
+         suggestions = self._language.suggest(fragment)
+         # Don't show suggestions that are invalid
+         suggestions = [s for s in suggestions if self.check(s)]
+-        if PY2:
++        if 0:
+             suggestions = [s.decode('utf-8') for s in suggestions]
+         return suggestions
+diff -ur Kivy-2.3.1/kivy/core/text/text_sdl2.py Kivy-2.3.1-extra-patch/kivy/core/text/text_sdl2.py
+--- Kivy-2.3.1/kivy/core/text/text_sdl2.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/core/text/text_sdl2.py	2026-09-24 14:57:40.042606869 +0200
+@@ -28,7 +28,7 @@
+ 
+     def get_extents(self, text):
+         try:
+-            if PY2:
++            if 0:
+                 text = text.encode('UTF-8')
+         except:
+             pass
+diff -ur Kivy-2.3.1/kivy/core/video/video_gstplayer.py Kivy-2.3.1-extra-patch/kivy/core/video/video_gstplayer.py
+--- Kivy-2.3.1/kivy/core/video/video_gstplayer.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/core/video/video_gstplayer.py	2026-09-24 14:57:40.042539669 +0200
+@@ -26,7 +26,7 @@
+ from os.path import realpath
+ from weakref import ref
+ 
+-if PY2:
++if 0:
+     from urllib import pathname2url
+ else:
+     from urllib.request import pathname2url
+diff -ur Kivy-2.3.1/kivy/core/window/window_pygame.py Kivy-2.3.1-extra-patch/kivy/core/window/window_pygame.py
+--- Kivy-2.3.1/kivy/core/window/window_pygame.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/core/window/window_pygame.py	2026-09-24 14:57:40.042402361 +0200
+@@ -227,7 +227,7 @@
+             Logger.exception('WinPygame: unable to set icon')
+ 
+     def _set_icon_standard(self, filename):
+-        if PY2:
++        if 0:
+             try:
+                 im = pygame.image.load(filename)
+             except UnicodeEncodeError:
+diff -ur Kivy-2.3.1/kivy/graphics/context_instructions.pyx Kivy-2.3.1-extra-patch/kivy/graphics/context_instructions.pyx
+--- Kivy-2.3.1/kivy/graphics/context_instructions.pyx	2026-09-24 14:52:55.978717513 +0200
++++ Kivy-2.3.1-extra-patch/kivy/graphics/context_instructions.pyx	2026-09-24 14:57:40.041705318 +0200
+@@ -453,7 +453,7 @@
+         '''Name of the matrix stack to use. Can be 'modelview_mat',
+         'projection_mat' or 'frag_modelview_mat'.
+         '''
+-        if PY2:
++        if 0:
+             return self.context_state.keys()[0]
+         else:
+             return list(self.context_state.keys())[0]
+diff -ur Kivy-2.3.1/kivy/graphics/fbo.pyx Kivy-2.3.1-extra-patch/kivy/graphics/fbo.pyx
+--- Kivy-2.3.1/kivy/graphics/fbo.pyx	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/graphics/fbo.pyx	2026-09-24 14:57:40.042261815 +0200
+@@ -502,4 +502,4 @@
+         data = py_glReadPixels(wx, wy, 1, 1, GL_RGBA, GL_UNSIGNED_BYTE)
+         self.release()
+ 
+-        return [ord(i) if PY2 else i for i in data]
++        return [ord(i) if 0 else i for i in data]
+diff -ur Kivy-2.3.1/kivy/graphics/instructions.pyx Kivy-2.3.1-extra-patch/kivy/graphics/instructions.pyx
+--- Kivy-2.3.1/kivy/graphics/instructions.pyx	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/graphics/instructions.pyx	2026-09-24 14:57:40.042041835 +0200
+@@ -895,7 +895,7 @@
+ 
+     cdef int apply(self) except -1:
+         cdef list keys
+-        if PY2:
++        if 0:
+             keys = self.state_stacks.keys()
+         else:
+             keys = list(self.state_stacks.keys())
+diff -ur Kivy-2.3.1/kivy/graphics/stencil_instructions.pyx Kivy-2.3.1-extra-patch/kivy/graphics/stencil_instructions.pyx
+--- Kivy-2.3.1/kivy/graphics/stencil_instructions.pyx	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/graphics/stencil_instructions.pyx	2026-09-24 14:57:40.041907761 +0200
+@@ -310,7 +310,7 @@
+         '''
+ 
+         index = _gl_stencil_op.values().index(self._op)
+-        if PY2:
++        if 0:
+             return _gl_stencil_op.keys()[index]
+         else:
+             return list(_gl_stencil_op.keys())[index]
+diff -ur Kivy-2.3.1/kivy/uix/rst.py Kivy-2.3.1-extra-patch/kivy/uix/rst.py
+--- Kivy-2.3.1/kivy/uix/rst.py	2024-12-26 17:04:18.000000000 +0100
++++ Kivy-2.3.1-extra-patch/kivy/uix/rst.py	2026-09-24 14:57:40.041365536 +0200
+@@ -605,7 +605,7 @@
+             # parse the source
+             document = utils.new_document('Document', self._settings)
+             text = self.text
+-            if PY2 and type(text) is str:
++            if 0 and type(text) is str:
+                 text = text.decode('utf-8')
+             self._parser.parse(text, document)
+ 
