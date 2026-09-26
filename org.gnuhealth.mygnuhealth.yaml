@@ -1,6 +1,6 @@
 id: org.gnuhealth.mygnuhealth
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 command: mygnuhealth
 
@@ -32,8 +32,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://files.pythonhosted.org/packages/97/00/21e34b365b895e6faf9cc5d4e7b97dd419e08f8a7df119792ec206b4a3fa/bcrypt-4.1.3-cp39-abi3-manylinux_2_28_x86_64.whl
-        sha256: 5f7cd3399fbc4ec290378b541b0cf3d4398e4737a65d0f938c7c0f9d5e686611
+        url: https://files.pythonhosted.org/packages/d4/8d/5e43d9584b3b3591a6f9b68f755a4da879a59712981ef5ad2a0ac1379f7a/bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl
+        sha256: 611f0a17aa4a25a69362dcc299fda5c8a3d4f160e2abb3831041feb77393a14a
         x-checker-data:
           name: bcrypt
           packagetype: bdist_wheel
@@ -42,8 +42,8 @@ modules:
       - type: file
         only-arches:
           - aarch64
-        url: https://files.pythonhosted.org/packages/29/3c/6e478265f68eff764571676c0773086d15378fdf5347ddf53e5025c8b956/bcrypt-4.1.3-cp39-abi3-manylinux_2_28_aarch64.whl
-        sha256: 3a5be252fef513363fe281bafc596c31b552cf81d04c5085bc5dac29670faa08
+        url: https://files.pythonhosted.org/packages/ac/31/79f11865f8078e192847d2cb526e3fa27c200933c982c5b2869720fa5fce/bcrypt-5.0.0-cp39-abi3-manylinux_2_34_aarch64.whl
+        sha256: edfcdcedd0d0f05850c52ba3127b1fce70b9f89e0fe5ff16517df7e81fa3cbb8
         x-checker-data:
           name: bcrypt
           packagetype: bdist_wheel
@@ -284,8 +284,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://files.pythonhosted.org/packages/78/c8/b45ff0a015f606c1998df2070967f016f873d4087845af14fd3d01303b0b/dbus_fast-2.44.3-cp313-cp313-manylinux_2_36_x86_64.whl
-        sha256: 6e0a6a27a1f53b32259d0789bca6f53decd88dec52722cac9a93327f8b7670c3
+        url: https://files.pythonhosted.org/packages/f5/cf/fd327dbb40ee67a9331fb587bf78aff2ab1500b35979978a5cacb10d7f8c/dbus_fast-5.0.22-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+        sha256: eb1d7e8e65561d0fd438004fd9e0f981c8a862912fed58dd4e29db1936c39d73
         x-checker-data:
           name: dbus-fast
           packagetype: bdist_wheel
@@ -294,8 +294,8 @@ modules:
       - type: file
         only-arches:
           - aarch64
-        url: https://files.pythonhosted.org/packages/ca/cf/e4ae27e14e470b84827848694836e8fae0c386162d98e43f891783c0abc8/dbus_fast-2.44.3-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: da0910f813350b951efe4964a19d7f4aaf253b6c1021b0d68340160a990dc2fc
+        url: https://files.pythonhosted.org/packages/b3/8c/4eefaabdf538882528164060ae83d9a34f1172b019c32c3254436834e9b1/dbus_fast-5.0.22-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl
+        sha256: 703e0f8f9af52e8e053394ee2b578042be0c3d8ea2b1488f9db8cb14393cc13f
         x-checker-data:
           name: dbus-fast
           packagetype: bdist_wheel
@@ -359,8 +359,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://files.pythonhosted.org/packages/38/57/755dbd06530a27a5ed74f8cb0a7a44a21722ebf318edbe67ddbd7fb28f88/pillow-12.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
-        sha256: f4f1231b7dec408e8670264ce63e9c71409d9583dd21d32c163e25213ee2a344
+        url: https://files.pythonhosted.org/packages/5c/44/c85361f65dbe00eea8576ee467c768d25129989efb76e94f205e9ca9bb46/pillow-12.3.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+        sha256: 251bf95b67017e27b13d82f5b326234ca62d70f9cf4c2b9032de2358a3b12c7b
         x-checker-data:
           name: pillow
           packagetype: bdist_wheel
@@ -369,8 +369,8 @@ modules:
       - type: file
         only-arches:
           - aarch64
-        url: https://files.pythonhosted.org/packages/20/39/c685d05c06deecfd4e2d1950e9a908aa2ca8bc4e6c3b12d93b9cafbd7837/pillow-12.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
-        sha256: 0b817e7035ea7f6b942c13aa03bb554fc44fea70838ea21f8eb31c638326584e
+        url: https://files.pythonhosted.org/packages/b1/9d/8b2c807dbef61a5197c047afe99823787eb66f63daf9fb2432f91d6f0462/pillow-12.3.0-cp314-cp314-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
+        sha256: e9aeb04d6aef139de265b29683e119b638208f88cf73cdd1658aa07221165321
         x-checker-data:
           name: pillow
           packagetype: bdist_wheel
