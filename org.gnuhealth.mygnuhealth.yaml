@@ -58,8 +58,8 @@ modules:
         --prefix=${FLATPAK_DEST} "requests" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/08/ba/95dd616042484f7c83a06974388b37b837732740ee70bc5dc715b5fcd55a/certifi-2026.10.18-py3-none-any.whl
-        sha256: 73191c47aaa79da394e8fee2dbc2ec827432cab56311122c9e47abf79e390f62
+        url: https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl
+        sha256: 42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b
         x-checker-data:
           name: certifi
           packagetype: bdist_wheel
@@ -189,8 +189,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/08/ba/95dd616042484f7c83a06974388b37b837732740ee70bc5dc715b5fcd55a/certifi-2026.10.18-py3-none-any.whl
-        sha256: 73191c47aaa79da394e8fee2dbc2ec827432cab56311122c9e47abf79e390f62
+        url: https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl
+        sha256: 42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b
         x-checker-data:
           name: certifi
           packagetype: bdist_wheel
