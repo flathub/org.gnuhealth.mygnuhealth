@@ -115,8 +115,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/b5/98/df615823cd9419131ce19fba00de53a663794369e198aade064a244b385d/zipp-4.1.1-py3-none-any.whl
-        sha256: 8979f52d874162f485ff2981e3891f3a3317b7a3dd43ff1e1775b9304f307a9c
+        url: https://files.pythonhosted.org/packages/b8/44/7bd2007260da11cccca29ba2d4c345f1287aa663db38ee7cefeabf6386a5/zipp-4.1.2-py3-none-any.whl
+        sha256: b30cb6cd253122169c47de245ca24a86bac2a5d3802ba15bf7ba6414eb9e144d
         x-checker-data:
           name: zipp
           packagetype: bdist_wheel
@@ -259,8 +259,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
-        sha256: a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427
+        url: https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl
+        sha256: 3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd
         x-checker-data:
           name: python-dateutil
           packagetype: bdist_wheel
